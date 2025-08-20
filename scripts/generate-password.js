@@ -1,4 +1,7 @@
-import { passwordGenerator } from 'generator.js';
+import { passwordGenerator } from './generator.js';
+
+document.querySelector('.js-generate-button')
+  .addEventListener('click', generateHTML);
 
 export function generateHTML() {
   const w1 = document.getElementById('w1').value;
@@ -9,4 +12,5 @@ export function generateHTML() {
   let passwordHTML = `<div>Your password is: ${password}</div>`;
   document.querySelector('.js-generated')
     .innerHTML = passwordHTML;
+  console.log('Function called')
 }
