@@ -14,5 +14,9 @@ export function passwordGenerator(input) {
   }
 
   let password = chars.reverse().join('')
-  console.log(`Your generated password is ${password}`);
+
+  const randomNum = Math.floor(Math.random() * 100);
+
+  password += randomNum + '!!';
+  return password;
 }
