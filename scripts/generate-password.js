@@ -1,6 +1,6 @@
 import { passwordGenerator } from 'generator.js';
 
-function generateHTML() {
+export function generateHTML() {
   const w1 = document.getElementById('w1').value;
   const w2 = document.getElementById('w2').value;
   const w3 = document.getElementById('w3').value;
