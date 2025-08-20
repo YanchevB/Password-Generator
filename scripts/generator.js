@@ -1,4 +1,4 @@
-function passwordGenerator(input) {
+export function passwordGenerator(input) {
   let [firstString, secondString, thirdString] = input;
   thirdString = thirdString.toUpperCase();
 
