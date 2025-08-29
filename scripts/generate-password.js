@@ -12,5 +12,4 @@ export function generateHTML() {
   let passwordHTML = `<div>Your password is: ${password}</div>`;
   document.querySelector('.js-generated')
     .innerHTML = passwordHTML;
-  console.log('Function called')
 }
