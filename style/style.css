@@ -14,3 +14,10 @@
   width: 100%;
   background-color: gray;
 }
+
+.title-text {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  font-size: 50px;
+}
