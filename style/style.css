@@ -25,3 +25,9 @@ body {
   margin-bottom: 40px;
   font-size: 50px;
 }
+
+.generated {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
