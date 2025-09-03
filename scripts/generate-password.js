@@ -10,7 +10,9 @@ export function generateHTML() {
   const password = passwordGenerator([w1, w2, w3]);
 
   let passwordHTML = `
-  <div>Your password is: ${password}</div>
+  <div class="generated-password>
+    Your password is: <div id="myPassword">${password}</div>
+  </div>
   <button>Copy to clipboard</button>`;
   document.querySelector('.js-generated')
     .innerHTML = passwordHTML;
