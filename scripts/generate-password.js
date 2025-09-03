@@ -1,4 +1,5 @@
 import { passwordGenerator } from './generator.js';
+import { copyToClipboard } from './copy-to-clipboard.js';
 
 document.querySelector('.js-generate-button')
   .addEventListener('click', generateHTML);
@@ -9,11 +10,13 @@ export function generateHTML() {
   const w3 = document.getElementById('w3').value;
   const password = passwordGenerator([w1, w2, w3]);
 
-  let passwordHTML = `
-  <div class="generated-password>
-    Your password is: <div id="myPassword">${password}</div>
-  </div>
-  <button>Copy to clipboard</button>`;
+  let passwordHTML = 
+  `Your password is: <div id="myPassword">${password}</div>
+  <button class="js-copy">Copy to clipboard</button>`;
+
   document.querySelector('.js-generated')
     .innerHTML = passwordHTML;
+  
+  document.querySelector('.js-copy')
+    .addEventListener('click', copyToClipboard);
 }
