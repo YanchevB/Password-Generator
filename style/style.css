@@ -32,3 +32,17 @@ body {
   align-items: center;
   gap: 10px;
 }
+
+.copy-image {
+  width: 20px;
+}
+
+.copy-button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.copied {
+  width: 20px;
+}
