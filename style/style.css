@@ -38,9 +38,11 @@ body {
 }
 
 .copy-button {
-  border: none;
+  border: solid;
   background-color: white;
   cursor: pointer;
+  border-color: #1164d4;
+  border-radius: 4px;
 }
 
 .copied {
