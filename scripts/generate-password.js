@@ -12,7 +12,7 @@ export function generateHTML() {
 
   let passwordHTML = 
   `Your password is: <div id="myPassword">${password}</div>
-  <button class="js-copy">Copy to clipboard</button>`;
+  <button class="js-copy copy-button"><img src='../resources/business_15648453.png' class='copy-image'></button>`;
 
   document.querySelector('.js-generated')
     .innerHTML = passwordHTML;
